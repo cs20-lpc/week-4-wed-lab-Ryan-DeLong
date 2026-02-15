@@ -1,0 +1,74 @@
+rdelo@R1ngtail MINGW64 /c/Users/rdelo/downloads/cs20/week-4-wed-lab-Ryan-DeLong
+$ ./RyanDriver
+
+=== INT: start empty ===
+isEmpty: 1
+length : 0
+print  : List is empty, no elements to display.
+
+=== INT: append 3 items ===
+length : 3
+print  : 4 <-> 30 <-> 23
+getElement(0): 4
+getElement(1): 30
+getElement(2): 23
+
+=== INT: insert at front (pos 0) ===
+print  : 5 <-> 10 <-> 20
+length : 3
+front  : 5
+
+=== INT: insert in middle ===
+print  : 10 <-> 20 <-> 30 <-> 40
+elem(2): 30
+
+=== INT: insert at end (pos == length) ===
+print  : 1 <-> 2 <-> 3 <-> 99
+last   : 99
+
+=== INT: remove front ===
+print  : 20 <-> 30
+length : 2
+new front: 20
+
+=== INT: remove middle ===
+print  : 10 <-> 20 <-> 40
+length : 3
+
+=== INT: remove end ===
+print  : 10 <-> 20
+length : 2
+
+=== INT: replace values ===
+print  : 7 <-> 88 <-> 9
+elem(1): 88
+
+=== INT: search ===
+search(30): 1
+search(999): 0
+
+=== INT: clear ===
+before clear: 1 <-> 2
+after clear : List is empty, no elements to display.
+isEmpty: 1
+length : 0
+
+=== INT: getElement out of bounds ===
+Caught exception: position out of bounds
+
+=== INT: insert out of bounds ===
+Caught exception: insert: error, position out of bounds
+
+=== INT: remove out of bounds ===
+Caught exception: position out of bounds
+
+=== INT: replace out of bounds ===
+Caught exception: position out of bounds
+
+=== STRING: append/insert/remove/search ===
+print: May <-> Your <-> Heart
+after inserts: May <-> Your <-> Drums <-> Heart <-> Beat
+search("Heart"): 1
+search("Banana"): 0
+after remove(1): May <-> Drums <-> Heart <-> Beat
+after replace(0,"Let"): Let <-> Drums <-> Heart <-> Beat
